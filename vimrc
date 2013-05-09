@@ -29,18 +29,13 @@ set title
 set termencoding=utf-8
 set encoding=utf-8
 set showmatch
-set laststatus=2
-set statusline=%-3.3n\ %f%(\ %r%)%(\ %#WarningMsg#%m%0*%)%=(%l,\ %c)\ %P\ [%{&encoding}:%{&fileformat}]%(\ %w%)\ %y\ 
-set shortmess+=axrI
 set ruler
 colorscheme wombat256mod
 
-if has("folding")
-	set foldenable
-	" Default method. Syntax related ones should be set based on filetype
-	set foldmethod=marker
-	set foldlevel=1
-endif
+set hlsearch
+" Press Space to turn off highlighting and clear any message already
+" displayed.
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " }}}
 
 set rtp+=~/.vim/bundle/vundle/
