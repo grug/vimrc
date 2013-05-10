@@ -30,7 +30,6 @@ set termencoding=utf-8
 set encoding=utf-8
 set showmatch
 set ruler
-colorscheme wombat256mod
 
 set hlsearch
 " Press Space to turn off highlighting and clear any message already
@@ -43,3 +42,7 @@ call vundle#rc()
 
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/wombat256.vim'
+
+filetype on
+colorscheme wombat256mod
+hi! Normal ctermbg=NONE guibg=NONE
