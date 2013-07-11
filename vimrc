@@ -17,10 +17,8 @@ set incsearch
 """ Editing {{{
 syntax on
 set autoindent
-set shiftround
 set tabstop=4
 set shiftwidth=4
-set textwidth=72
 set expandtab
 " }}}
 
@@ -30,6 +28,7 @@ set termencoding=utf-8
 set encoding=utf-8
 set showmatch
 set ruler
+set number
 
 set hlsearch
 " Press Space to turn off highlighting and clear any message already
